@@ -7,7 +7,6 @@ def main():
 
 
 def is_valid(s):
-    print(first_two(s) , length(s) , ctrl_num(s) , check_zero(s) , no_punc(s))
     return first_two(s) and length(s) and ctrl_num(s) and check_zero(s) and no_punc(s)
 
 def first_two(s):
@@ -21,8 +20,8 @@ def ctrl_num(s):
         if s[count].isdigit() and s[count+1].isalpha():
             return False
     return True
-            
-    
+
+
 def check_zero(s):
     numbers = [char for char in s if char.isdigit()]
     if numbers:
